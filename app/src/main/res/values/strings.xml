@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">XO_project</string>
+    <string name="winner_message">Congratulations, you win!</string>
+</resources>
