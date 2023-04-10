@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">XO_project</string>
     <string name="winner_message">Congratulations, you win!</string>
+    <string name="pc_winner_message">You lost, try again.</string>
+    <string name="newGame">Restart</string>
+    <string name="draw_message">There is no winner, it is a draw.</string>
 </resources>

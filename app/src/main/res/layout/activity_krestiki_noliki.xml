@@ -8,6 +8,71 @@
     android:layout_height="match_parent"
     tools:context=".KrestikiNoliki">
 
+    <LinearLayout
+        android:id="@+id/pointsLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playerPoints"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:text="0"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="player : pc"
+            />
+        <TextView
+            android:id="@+id/pcPoints"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+
+        />
     <TableLayout
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -103,14 +168,16 @@
         </TableRow>
 
     </TableLayout>
-    
-    <TextView
-        android:id="@+id/textView"
-        android:layout_margin="5dp"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
+    <Button
+        android:id="@+id/restart"
+        android:onClick="clcRestart"
+        android:text="@string/newGame"
+        android:layout_margin="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         />
+
 </RelativeLayout>
